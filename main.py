@@ -123,7 +123,7 @@ def draw_game():
     for e in enemies: e.draw_at(camera_x)
     for b in bullets: b.draw_at(camera_x)
     if instrucoes_timer>0:
-        for i, texto in enumerate(["Use as setas <- -> para andar", "Espaço para pular", "Z para atirar"]):
+        for i, texto in enumerate(["Use as setas <- -> para andar", "Espace para pular", "Z para atirar"]):
             screen.draw.text(texto, topright=(WIDTH-10, 10+i*25), fontsize=24, color="white")
 
 def on_mouse_down(pos):
